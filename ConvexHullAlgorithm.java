@@ -43,7 +43,7 @@ public class ConvexHullAlgorithm {
 
     public static void main(String[] args) {
         
-        final long startTime = System.currentTimeMillis();
+        final long startTime = System.nanoTime();
         int[][] points = { { 0, 0 }, { 2, -3 }, { -2, -1 },
   { -3, 2 }, { 1, 1 }, { 4, -4 },
   { -4, -2 }, { -1, 2 }, { 2, 3 },
@@ -60,7 +60,7 @@ public class ConvexHullAlgorithm {
             System.out.println(point[0] + " " + point[1]);
             
         }
-        final long endTime = System.currentTimeMillis();
+        final long endTime = System.nanoTime();
 
         System.out.println("Total execution time: " + (endTime - startTime));
 
